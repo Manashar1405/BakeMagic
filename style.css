@@ -1,0 +1,381 @@
+/* ===== GLOBAL ===== */
+
+/* ===== HEADER ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff9ac2;
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0 4px 10px rgba(255,154,194,0.3);
+
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.cart-icon {
+  background: white;
+  color: #ff6fa8;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.logo-img {
+  height: 70px;  /* Adjust size as needed */
+  width: auto;
+  border-radius: 8px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff5f8;
+  margin: 0;
+  padding: 0;
+  color: #3a2e2e;
+  text-align: center;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(rgba(255,182,193,0.65), rgba(255,182,193,0.65)),
+              url('background.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Explore Button */
+.explore-btn {
+  background: white;
+  color: #ff6fa8;
+  border: 2px solid #ff9ac2;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(255,154,194,0.4);
+}
+.explore-btn:hover {
+  background: #ff6fa8;
+  color: white;
+  transform: scale(1.08);
+}
+
+/* ===== MENU SECTION ===== */
+.section-title {
+  font-size: 2rem;
+  margin-top: 60px;
+  color: #ff6fa8;
+  text-shadow: 0 1px 4px rgba(255,154,194,0.3);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.06);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.12);
+}
+
+.menu-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 2.5s cubic-bezier(.25, .8, .25, 1), box-shadow 1.2s ease-in-out;
+  border: 3px solid rgba(255,154,194,0.12);
+}
+.item:hover .menu-img {
+  box-shadow: 0 0 35px rgba(255, 154, 194, 0.6);
+}
+.menu-img.rotate {
+  transform: rotate(360deg) scale(1.05);
+}
+/* --- Link styling for menu items --- */
+.menu a {
+  text-decoration: none;
+  color: #ff69b4; /* soft pink */
+}
+
+.menu a:hover {
+  color: #ff1493; /* darker pink on hover */
+}
+
+/* ===== BLOG SECTION ===== */
+.blog {
+  margin-top: 100px;
+  background-color: #fff0f6;
+  padding: 60px 20px;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(16,24,40,0.08);
+  width: 300px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(255,154,194,0.3);
+}
+
+.blog-card h3 {
+  color: #ff6fa8;
+  margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #ff9ac2;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+  box-shadow: 0 -4px 10px rgba(255,154,194,0.3);
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 10px;
+  transition: opacity 0.3s;
+}
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 720px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* ===== Donut ===== */
+/* Background for item pages */
+.item-page {
+  background: url("donutbg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #3b1c1c;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Product hero */
+.product-hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: rgba(255, 245, 248, 0.8);
+  border-radius: 12px;
+  margin: 30px auto 10px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  animation: floatIn 1.5s ease-in-out;
+}
+
+.product-title {
+  color: #ff6fa8;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.tagline {
+  color: #5c4444;
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+/* Variety grid */
+.varieties-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px 10px;
+}
+
+.variety-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 230px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(5px);
+}
+
+.variety-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.variety-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Button */
+.order-btn {
+  background-color: #ff9ac2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #ff6fa8;
+  transform: scale(1.05);
+}
+
+/* About section */
+.about-item {
+  text-align: center;
+  background: rgba(255, 245, 248, 0.85);
+  margin: 40px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+.cake-page {
+  background: url("cakebg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #3b1c1c;
+  font-family: "Poppins", sans-serif;
+}
+
+.cookie-page {
+  background: url("cookiesbg.webp") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #3b1c1c;
+  font-family: "Poppins", sans-serif;
+}
+
+.feedback-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.feedback-form button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.feedback-form button:hover {
+  background: #d81b60;
+}

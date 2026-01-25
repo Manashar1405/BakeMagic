@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BakeMagic | Donuts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="item-page">
+
+  <?php session_start(); ?>
+
+  <section class="product-hero">
+    <img src="images/donut.png" alt="Donut" class="hero-img">
+    <h1 class="product-title">Our Donut Delights</h1>
+    <p class="tagline">Soft, sweet, and freshly baked just for you!</p>
+    <a href="cart.php" class="order-btn">🛒 View Cart</a>
+  </section>
+
+  <main class="varieties-grid">
+    <div class="variety-card">
+      <img src="choco_donut.webp" alt="Chocolate Donut">
+      <h3>Chocolate Donut</h3>
+      <p>Rich cocoa glaze with soft dough inside.</p>
+      <p class="price">₹80</p>
+      <button class="order-btn add-to-cart"
+              data-name="Chocolate Donut"
+              data-price="80">Add to Cart</button>
+    </div>
+
+    <div class="variety-card">
+      <img src="strawberry_d.jpg" alt="Strawberry Donut">
+      <h3>Strawberry Donut</h3>
+      <p>Sweet strawberry icing with sprinkles on top.</p>
+      <p class="price">₹90</p>
+      <button class="order-btn add-to-cart"
+              data-name="Strawberry Donut"
+              data-price="90">Add to Cart</button>
+    </div>
+
+    <div class="variety-card">
+      <img src="glazed.jpg" alt="Glazed Donut">
+      <h3>Glazed Donut</h3>
+      <p>Classic glazed donut with perfect softness.</p>
+      <p class="price">₹70</p>
+      <button class="order-btn add-to-cart"
+              data-name="Glazed Donut"
+              data-price="70">Add to Cart</button>
+    </div>
+  </main>
+
+  <section class="about-item">
+    <h2>Why Our Donuts?</h2>
+    <p>
+      Every donut is handmade with love, baked fresh daily, and glazed to perfection. 
+      We use high-quality ingredients to ensure every bite melts in your mouth.
+    </p>
+  </section>
+
+  <script src="js/item.js"></script>
+</body>
+</html>
